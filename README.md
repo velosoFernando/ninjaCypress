@@ -1,4 +1,6 @@
+<center>
 # 🐱‍👤🥋 **Cypress – Test Automation Journey**
+</center>
 
 # 🛠️ **Tecnologias Utilizadas**
 
