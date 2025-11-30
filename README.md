@@ -51,24 +51,6 @@ npx cypress run
 ```bash
 docker-compose up -d
 ```
-
----
-
-# 📂 **Estrutura das pastas**
-
-A organização do projeto segue uma estrutura clara e escalável:
-
-```
-cypress/
-  ├── e2e/
-  ├── fixtures/
-  ├── support/
-  ├── helpers/
-  ├── custom-commands/
-  ├── mocks/
-  └── utils/
-```
-
 ---
 
 # 👨‍💻 **Autor**
