@@ -1,0 +1,6 @@
+-- Inglês ou Português? Qual idioma usar!
+
+- Mudei as funções da aula 13 para inglês. 
+- Manter um padrão / convenção.
+- Apenas nome do cenário e textos capturados devem estar em pt-br.
+- Variáveis também devem estar em inglês.

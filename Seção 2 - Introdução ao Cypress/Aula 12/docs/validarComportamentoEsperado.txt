@@ -1,0 +1,5 @@
+-- Validando Comportamento Esperado
+
+- Toda vez que executamos uma ação de interação com um software, temos que receber em um resultado esperado.
+- Vamos substituir o wait pelo elemento data-cy.
+    - Uma propriedade feita pelo desenvolvedor para facilitar o processo de automação.

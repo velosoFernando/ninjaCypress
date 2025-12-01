@@ -1,0 +1,40 @@
+-- 
+
+- O desfecho final dos casos de testes são diferentes. Apesar de manipularem os mesmos elementos.
+
+1. Vamos criar um command.
+2. Encapsular um teste reutilizável
+    - Esses comandos aparecem em todos os cenários.
+
+    cy.viewport(1920, 1080);
+    cy.visit("http://localhost:3000");
+
+    cy.get("#email").type("papito@webdojo.com");
+    cy.get("#password").type("katana123");
+    cy.contains("button", "Entrar").click();
+
+3. Vou criar variáveis de argumento para 'email' e 'senha'.
+
+    Cypress.Commands.add("submeterLogin", (email, senha) => {
+    cy.viewport(1920, 1080);
+    cy.visit("http://localhost:3000");
+
+    cy.get("#email").type(email);
+    cy.get("#password").type(senha);
+    cy.contains("button", "Entrar").click();
+    });
+
+4. Crio um comando com todos os steps:
+    cy.contains("Acesso negado! Tente novamente.").should("be.visible");
+    
+    - Utilizo nos trechos em que se repetia (ver código js).
+
+ENTÃO APRENDEMOS A ENCAPSULAR FUNÇÕES QUE SÃO USADAS DIVERSAS VEZES.
+
+5. Criamos um comando para começar com as funções de onde iremos navegar e tamanho da tela.
+
+    Cypress.Commands.add("iniciar", () => {
+    cy.viewport(1920, 1080);
+    cy.visit("http://localhost:3000");
+    });
+

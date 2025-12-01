@@ -1,0 +1,6 @@
+-- Cobertura de Testes
+
+- Ao tentar realizar um login com as credenciais inválidas, aparece uma interação JS na tela (ver imagem 1).
+- Após criarmos outros cenários de teste, temos uma switch completa (com o alcance projetado).
+
+- Usar o recurso de timeline do Cypress para validar testes.
