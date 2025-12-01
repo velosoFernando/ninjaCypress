@@ -1,0 +1,26 @@
+-- Instalação do Cypress
+
+1. Abrir o Terminal (clear)
+    > cd /c/NinjaDoCypress/webdojo/web
+        > Abre a pasta web onde está a aplicação do WebDojo
+        > Antes do enter é necessário abrir o site https://www.npmjs.com/ para ver qual a versão do Cy liberada no momento.
+        > Instalar a versão mais segura e estável: 14.5.4 (o último derivado da versão 14. Mais compatibilidade com o treinamento).
+    > npm install cypress@14.1.0
+    > npm install cypress@14.1.0 -D
+        > Instala o Cy como uma dependência de desenvolvimento (devDependencies - apenas ambientes de testes, não precisa ser instalando em produção).
+    > npx cypress open
+        > Abre o Cypress em ambiente interativo
+    > E2E Testing
+    > Criar nova Spec
+    > Lado esquerdo: Timeline do Cy.
+    > Lado direito: Navegador.
+        > Posso usar o recurso de mira para inspecionar elementos.
+    > Run All Test faz um reload e testa tudo novamente.
+    > Alterar o caminho de acesso no navegador dentro do teste:
+        cy.visit('http://localhost:3000')
+        > Necessário estar com o ambiente em run (npm run dev).
+    > Cypress por padrão renderiza a aplicação em 1000x660
+        > posso passar para qual renderização ele quer (viewport)
+        > full hd desktop = cy.viewport(1920, 1080)
+    
+    

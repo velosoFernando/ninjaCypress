@@ -1,0 +1,44 @@
+-- Describe e It no Cypress
+
+- Entender a anatomia do documento!
+
+describe('template spec', () => {
+  it('passes', () => {
+    cy.viewport(1920, 1080)
+    cy.visit('http://localhost:3000')
+  })
+})
+
+Describe = Serve para agrupar um conjunto de testes automatizados
+It = Implementa um testes automatizado
+
+- Criando um novo bloco de testes
+
+describe('login', ()=>{
+  
+})
+
+- Dentro do bloco vamos criar o nosso primeiro caso de teste com 'it'
+
+describe('login', ()=>{
+  it('Deve logar com sucesso', ()=> {
+
+  })
+})
+
+- Vamos criar o viewport para se adaptar a tela
+
+describe('login', ()=>{
+  it('Deve logar com sucesso', ()=> {
+    cy.viewport(1920, 1080)
+  })
+})
+
+- Vamos direcionar o teste para uma tela
+
+describe('login', ()=>{
+  it('Deve logar com sucesso', ()=> {
+    cy.viewport(1920, 1080)
+    cy.visit('http://localhost:3000')
+  })
+})

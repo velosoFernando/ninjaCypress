@@ -1,0 +1,18 @@
+-- Como identificar e preencher campos
+
+- Abrir o Cypress em ambiente interativo
+- Clicar na seta (ao lado do caminho web)
+- Selecionar o elemento que deseja coletar
+    - Selecionei o e-mail:
+    > cy.get 
+        - get para obter elemento.
+    > cy.get('#email')
+        - elemento (copiar clicando no copy to clipboard)
+        - #email representa o id, que será o elemento utilizado
+        - estar atento a quantidade de elementos (1 of 1)
+    > cy.get('#password')
+
+- Para preencher é necessário usar a função '.type'
+    > cy.get('#email').type('papito@webdojo.com')
+    > cy.get('#password').type('katana123')
+    - Utilizada somente para elementos de entrada de dados.

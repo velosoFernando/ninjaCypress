@@ -1,0 +1,21 @@
+-- Clicando no botão + Cy tem XPath?
+
+- Mesmo processo de captura de elemento (usar seta e clicar no local que deseja capturar).
+
+    > cy.get('.bg-\[\#8257E5\]') 
+        - Não é recomendado usar classes de style.
+    - Necessário buscar outro elemento quando não há ID.
+
+    - Criei um XPath:
+        > //button[text()="Entrar"]
+        - Cypress não tem suporte para XPath.
+        - Então é preciso usar o comando '.contains'.
+
+        > cy.contains('button', 'Entrar')
+            - Combinação de botão com o texto 'Entrar'.
+
+        -Então adiciono a subfunção de clique (para clicar no botão)
+        > cy.contains('button', 'Entrar').click()
+        > cy.wait(3000)
+            - Adiciona um wait de 3 segundos.
+        
