@@ -1,0 +1,18 @@
+-- Como implementar baby steps nos testes.
+
+- Vamos preencher o formulário de consultoria.
+    - Iremos iniciar pela consultoria 'individual'.
+
+- Não encontrei um elemento bom, então o melhor caminho é procurar por um que seja utilizável. Nesse caso, encontrei um h4 com um texto específicos:
+    > cy.contains('h4', 'Formulários').should('be.visible')
+
+- Posso adicionar a função 'parent()' que chama o elemento pai (nesse caso uma div).
+
+- cy.contains("h4", "Formulários").parent().parent().parent().should("be.visible");
+    - Dessa maneira eu encontro a informação no elemento pai.
+
+- MELHOR MANEIRA DE FAZER ISSO É USAR O ELEMENTO NA CHAMADA, POIS O CYPRESS RECONHECE ELEMENTOS PAIS E FILHOS.
+    > cy.contains("button", "Formulários").should("be.visible");
+        - button é o elemento pai
+
+

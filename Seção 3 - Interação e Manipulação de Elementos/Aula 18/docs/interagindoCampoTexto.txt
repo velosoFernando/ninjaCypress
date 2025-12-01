@@ -1,0 +1,9 @@
+-- Interagindo com Campos de Texto
+
+1. Utilizamos o 'cy.get' para obter o elemento e devolvemos o que será escrito nele:
+    > cy.get('#name').type('Fernando Papito');
+
+- Podemos utilizar o elemento PLACEHOLDER caso não tenhamos ID
+    - Devemos identificar a tag desse elemento
+    > input[placeholder="Digite seu nome completo"]
+        > cy.get('input[placeholder="Digite seu nome completo"]').type('Fernando Papito');

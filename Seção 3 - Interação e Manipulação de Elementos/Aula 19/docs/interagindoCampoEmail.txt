@@ -1,0 +1,4 @@
+-- Interagindo com o Campo Email
+
+- O type email dá ao navegador uma pré-visualização:
+    > cy.get('#email').type('papito@webdojo.com');

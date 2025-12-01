@@ -1,0 +1,9 @@
+-- Interação com Campo Telefone
+
+- Utilizaremos o placeholder.
+    - ctrl + f no elements do devtools.
+    > input[placeholder="("00 00000-0000")]
+    - Iremos utilizar o XPath
+    > cy.get('input[placeholder="(00) 00000-0000"]').type('22 99707-7837')
+    - O preenchimento deve ser feito com a quantidade de números que tem na máscara.
+    
