@@ -1,0 +1,4 @@
+- Acessar a pasta web
+- Entrar na aplicação (porta 3000)
+    - Não fechar Gitbash pelo 'X', apenas CTRL C
+    - Necessário finalizar os programas ou reiniciar o computador.

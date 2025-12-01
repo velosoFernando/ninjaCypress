@@ -1,0 +1,9 @@
+1. Acessar o https://nodejs.org/pt
+    - Instalar a aplicação que roda JS sem precisar do navegador;
+    - Fazer o download pelo Windows Installer (.msi) padrão;
+    - Instalar qualquer versão do Node 22;
+    - Abra o terminal e digite o comando:
+        - node -v
+            - traz a versão do nodejs
+        - npm -v
+            - traz a versão do npm

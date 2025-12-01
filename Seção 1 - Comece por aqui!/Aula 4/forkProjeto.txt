@@ -1,0 +1,12 @@
+1. Criar uma pasta chamada 'NinjaDoCypress'
+    - necessário ser dentro do C:
+    - no terminal digitar mkdir /c/NinjaDoCypress
+        - comando bash para criar pasta
+
+2. Acessar: https://github.com/ninjadocypress/webdojo
+    - tem a maior parte do material do curso
+    - tecnologias utilizadas
+    - aplicação
+    - clicar em 'fork'
+        - cria uma cópia do projeto no meu perfil
+        - pegar o ssh

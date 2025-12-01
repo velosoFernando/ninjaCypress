@@ -1,0 +1,5 @@
+Instalar o Git no Windows:
+    - https://git-scm.com/install/windows
+
+Recomendado usar o aplicativo Terminal (ver imagens).
+

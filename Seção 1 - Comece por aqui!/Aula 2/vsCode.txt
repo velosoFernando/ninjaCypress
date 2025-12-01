@@ -1,0 +1,4 @@
+Instale o VS Code.
+
+- Uso o tema 'Firefox Theme'.
+- Uso a extensão 'Atom Material Icons' para pacotes de ícones.

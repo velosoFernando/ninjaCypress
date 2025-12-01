@@ -1,0 +1,29 @@
+1. Necessário estar com o ambiente configurado (Aula 4).
+2. Ir no terminal:
+    2.1 - Abrir a pasta 'web';
+    2.2 - Rodar o comando 'npm install' para instalar as dependências do projeto;
+        - É um projeto Node.js.
+    2.3 - Enquanto isso ocorre ir no VS Code > Web > 'package.json'
+        - É o arquivo de dependências dos projeto.
+        2.3.1 - "serve": "^14.2.4"
+            - Cria uma mini servidor web localmente para fazer a aplicação web entrar no ar.
+            - Aplicação está dentro de "dist" (pasta)
+            - Necessário colocar a aplicação no ar a partir da porta 3000
+                - No terminal rodar: 'npm run dev'
+            - Validar no navegador digitando 'localhost:3000'
+                - Necessário abrir aplicação WebDojo
+                - Funções
+                    - Login
+                        - papito@webdojo.com
+                        - katana123
+                            - Entrada de dados
+                            - Integração
+                                - Interceptação de requisoções de APIs (testes integrados)
+                            - Tabelas
+                            - Drag and drop com Cy
+                            - Validação de iframde
+                            - Alertas em JS
+                                - Alert, Confirm, Prompt
+                    - Login com Google
+                    - Cadastro
+                    - Chat

@@ -1,0 +1,5 @@
+1. Reinicei o PC e tentei acessar a aplicação, mas ela não rodou.
+    - Acontece pois a aplicação não está online;
+    - Abrir o Gitbash;
+    - Entrar na pasta 'web'
+    - Rodar 'npm run dev'
