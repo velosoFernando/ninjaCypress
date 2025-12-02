@@ -1,0 +1,6 @@
+-- Vamos Interagir Com Campo Texto
+
+- Suponhamos que não temos ID, nesse caso utilizaremos o placeholder (ver imagem 1).
+    - f12
+    > textarea[placeholder="Descreva mais detalhes sobre sua necessidade"]
+    
