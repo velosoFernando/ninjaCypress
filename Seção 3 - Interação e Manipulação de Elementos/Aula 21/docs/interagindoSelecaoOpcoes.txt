@@ -1,0 +1,13 @@
+-- Seleção de Opção
+
+- Tenho um drop down com diversas opções (pertence ao navegador):
+    - Não é possível interagir clicando.
+    - Cy não clica, ele seleciona.
+    > cy.get('#consultancyType').select('In Company');
+    ou
+    > cy.get('#consultancyType').select('inCompany'); // através do value.
+    - Elementos value usam enumeração no value.
+
+- Como automatizar sem id, placeholder...
+    - ctrl f
+    > //label[text()="Tipo de Consultoria] // encontra o label, mas o Cy não tem XPath.

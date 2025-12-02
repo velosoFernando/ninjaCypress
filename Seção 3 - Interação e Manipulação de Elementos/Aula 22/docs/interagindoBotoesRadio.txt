@@ -1,0 +1,13 @@
+-- Interagindo com Botões Radio
+
+- Se chama assim por parecerem botões de rádiso antigos.
+- type="radio"
+    - dá forma ao botão.
+- name="personType"
+    > input[name="personType"]
+- Texto > elemento pai > elemento filho
+- Posso marcar com .click() ou .check()
+
+    cy.contains("label", "Pessoa Física").find("input").click();
+    cy.contains("label", "Pessoa Jurídica").find("input").should("be.not.checked");
+        - Garante que a outra opção não está marcada.

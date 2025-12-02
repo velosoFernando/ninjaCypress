@@ -1,0 +1,14 @@
+-- Nem Sempre o Placeholder é o Ideal
+
+- Campo CPF
+    - Placeholder
+    > input[placeholder="000.000.000-00"]
+
+- Vamos usar um gerador de CPF (sem pontuação):
+    - https://www.4devs.com.br/gerador_de_cpf
+    > 00329299000
+
+    > cy.get('input[placeholder="000.000.000-00"]').type("00329299000");
+        - Preenche com a máscara sem erros.
+
+        

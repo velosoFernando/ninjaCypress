@@ -1,0 +1,9 @@
+-- Anexando Arquivos para Upload
+
+- Tenho um elemento 'Choose File'.
+    - Difícil estilizar esse elemento (padrão).
+    - Se cria um elemento com estilo e oculta o 'Choose File', dessa maneira é possível fazer com JS a interação mascarada.
+    - Nesse caso é uma class="hidden"
+    - Cy não vai selecionar o arquivo, já que é uma aba do desktop (construído em C).
+    - Para adicionar um arquivo é necessário que ele esteja na estrutura do Cypress (dentro da pasta Fixtures).
+    - É necessário frocar a interação com elementos ocultos.
