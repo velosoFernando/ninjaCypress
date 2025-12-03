@@ -1,0 +1,3 @@
+-- Submissão do Formulário Preenchido
+
+- Necessário marcar o checkbox do termos de uso primeiro.

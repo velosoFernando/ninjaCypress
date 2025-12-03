@@ -1,0 +1,5 @@
+-- Praticando com Cypress
+
+Primeira Tentativa - Fiz muitas consultas relacionadas a baby steps.
+Segunda Tentativa - Apliquei o modo RogueLike e cheguei a criar novos commands e cenários de teste.
+

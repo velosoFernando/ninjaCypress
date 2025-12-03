@@ -1,0 +1,51 @@
+-- Interagindo Array de Tags e Simulando o Teclado Físico
+
+- Temos um campo onde é necessário incluir itens e clicar com enter para que esse item seja salvo na lista.
+    - Campo de tags
+    > .type("{enter}") // simula o enter do teclado
+
+    cy.get('input[placeholder="Digite uma tecnologia e pressione Enter"]')
+      .type("Cypress")
+      .type("{enter}");
+
+    - quando eu preencho preciso entender pra qual tag vai o conteúdo após ser adicionado, geralmente vai para span.
+
+
+- Não utilizar esse modelo de validação, pois podem existir outros spans com o mesmo nome:
+
+    cy.get('input[placeholder="Digite uma tecnologia e pressione Enter"]')
+      .type("Cypress")
+      .type("{enter}");
+    
+    cy.contains('span', 'Cypress')
+        .should('be.visible');
+
+- Vamos utilizar um modelo que busca na label 
+
+    cy.contains('label', 'Tecnologias')
+    .parent()
+    .contains('span', 'Cypress')
+    .should('be.visible')
+
+- Podemos criar uma Array de tecnologias através do forEach
+
+    const techs = [
+        'Cypress',
+        'Selenium',
+        'WebDriverIO',
+        'Playwright',
+        'Robot Framework'
+    ]
+
+        techs.forEach((tech) => {
+            cy.get(
+              'input[placeholder="Digite uma tecnologia e pressione Enter"]'
+            )
+              .type(tech)
+              .type("{enter}");
+
+            cy.contains("label", "Tecnologias")
+              .parent()
+              .contains("span", tech)
+              .should("be.visible");
+    })
